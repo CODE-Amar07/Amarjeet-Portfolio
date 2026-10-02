@@ -1,0 +1,12 @@
+# Large archives (exceeds GitHub 100MB file limit)
+video_frames_24fps_png.zip
+*.zip
+*.tar.gz
+
+# System & OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary & Log files
+*.log

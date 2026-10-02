@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Amarjeet Rout — Web Developer & Full Stack Developer Portfolio. Specialized in building scalable web applications, RESTful APIs, and responsive interfaces with Python, JavaScript, React, Node.js, and modern databases.">
+  <title>Amarjeet Rout — Web Developer | Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,400&family=Oswald:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-ring">
+        <div class="ring-spinner"></div>
+        <span id="loader-percent" class="loader-percent">0%</span>
+      </div>
+      <div class="loader-info">
+        <p class="loader-status">Preloading Cinematic Portfolio</p>
+        <div class="loader-progress-track">
+          <div id="loader-progress-bar" class="loader-progress-fill"></div>
+        </div>
+        <p id="loader-frames-count" class="loader-frames">0 / 192 frames</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Fixed Background Animation Layer (Full Screen & Fixed Across Entire Website) -->
+  <div class="fixed-bg-layer" id="fixed-bg-layer">
+    <canvas id="animation-canvas"></canvas>
+    <div class="cinematic-vignette"></div>
+    <div class="hero-ambient-glow"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo">AMARJEET ROUT</a>
+
+      <div class="nav-pill">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <a href="#contact" class="btn-primary btn-nav">
+        <span>Contact Me</span>
+        <span class="btn-icon">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Scrollable Content Container -->
+  <main class="page-content" id="scroll-track">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-top-badge">
+        <span class="hero-greeting">Hi, I am</span>
+      </div>
+
+      <div class="hero-title-wrap">
+        <h1 class="hero-name">Amarjeet Rout</h1>
+      </div>
+
+      <div class="hero-content-grid">
+        <!-- Left Hero CTA Block -->
+        <div class="hero-left-block">
+          <div class="trusted-tag">
+            <span class="dot-indicator"></span>
+            <span>B.Tech CSE • GITA Autonomous College</span>
+          </div>
+          <h2 class="hero-tagline">Building scalable full-stack web apps<br>& clean digital experiences</h2>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <span>Explore Projects</span>
+              <span class="btn-icon">↘</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Get in Touch</span>
+              <span class="btn-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Engineering Focus Card -->
+        <div class="hero-right-block">
+          <div class="hero-review-card">
+            <div class="tech-card-badge">
+              <span class="dot-indicator"></span>
+              <span class="tech-card-title">Full Stack Developer</span>
+            </div>
+            <p class="review-quote">Specialized in Python & MERN Stack development with REST APIs, robust database
+              architectures, and responsive interfaces.</p>
+            <div class="review-badges">
+              <span class="review-badge">MERN Stack</span>
+              <span class="review-badge">Python & SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle Scroll Indicator -->
+      <div id="scroll-indicator" class="scroll-indicator">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Infinite Marquee Ticker -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>FULL STACK WEB DEVELOPMENT</span>
+          <span class="star-icon">✦</span>
+          <span>PYTHON &amp; JAVASCRIPT</span>
+          <span class="star-icon">✦</span>
+          <span>REACT.JS &amp; NODE.JS</span>
+          <span class="star-icon">✦</span>
+          <span>REST APIS &amp; DATABASES</span>
+          <span class="star-icon">✦</span>
+          <span>MYSQL &amp; MONGODB</span>
+          <span class="star-icon">✦</span>
+          <span>GIT &amp; CI/CD PIPELINES</span>
+          <span class="star-icon">✦</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>FULL STACK WEB DEVELOPMENT</span>
+          <span class="star-icon">✦</span>
+          <span>PYTHON &amp; JAVASCRIPT</span>
+          <span class="star-icon">✦</span>
+          <span>REACT.JS &amp; NODE.JS</span>
+          <span class="star-icon">✦</span>
+          <span>REST APIS &amp; DATABASES</span>
+          <span class="star-icon">✦</span>
+          <span>MYSQL &amp; MONGODB</span>
+          <span class="star-icon">✦</span>
+          <span>GIT &amp; CI/CD PIPELINES</span>
+          <span class="star-icon">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-sidebar">
+          <div class="section-label">
+            <span class="dot-indicator"></span>
+            <span>About Me</span>
+            <span class="label-line"></span>
+          </div>
+        </div>
+
+        <div class="about-main">
+          <p class="about-statement">
+            I am a Full Stack Web Developer and Computer Science Engineering student at GITA Autonomous College. I
+            specialize in building responsive, high-performance web applications, engineering robust REST backends, and
+            architecting database-driven solutions using Python, JavaScript, modern frameworks, and NoSQL databases.
+          </p>
+
+          <div class="about-cta-group">
+            <a href="https://github.com/AMARJEETROUT" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <span>GitHub Profile</span>
+              <span class="btn-icon">↗</span>
+            </a>
+            <a href="#projects" class="btn-secondary">
+              <span>View Projects</span>
+              <span class="btn-arrow">↘</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Core Tech Stack Section -->
+    <section class="skills-section" id="skills">
+      <div class="skills-strip-header">
+        <span class="dot-indicator"></span>
+        <span class="skills-strip-title">Core Technologies &amp; Tools</span>
+      </div>
+      <div class="skills-container">
+        <span class="skill-badge-item"><span class="skill-dot"></span>Python</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>JavaScript</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>React.js</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>Node.js</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>Express.js</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>Django</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>MySQL</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>MongoDB</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>REST APIs</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>Git &amp; GitHub</span>
+        <span class="skill-badge-item"><span class="skill-dot"></span>HTML5 &amp; CSS3</span>
+      </div>
+    </section>
+
+    <!-- Selected Work & Experience Section -->
+    <section class="projects-section" id="projects">
+      <div class="projects-layout">
+        <!-- Left Column: Card 1 (Weather), Card 3 (OCAC), and Philosophy Quote -->
+        <div class="projects-col-left">
+          <!-- Project 1: Weather Forecasting Application -->
+          <article class="project-card">
+            <div class="project-media-wrap">
+              <img src="assets/project_weather.jpg" alt="Weather Forecasting Application Dashboard" class="project-img"
+                loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Weather Forecasting Application</h3>
+              <p class="project-desc">Interactive real-time weather platform with dynamic API integration, forecast
+                cards, and live meteorological data visualizers.</p>
+              <div class="project-tags">
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">REST API</span>
+                <span class="tag-pill">HTML5 &amp; CSS3</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 1: OCAC Python Full Stack Internship -->
+          <article class="project-card" id="experience">
+            <div class="project-media-wrap">
+              <img src="assets/project_ocac.jpg" alt="OCAC Python &amp; Django Full Stack Web Development Internship"
+                class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Python Full Stack Internship • OCAC</h3>
+              <p class="project-desc">Engineered full-stack solutions at Odisha Computer Application Centre utilizing
+                Python, Django, REST APIs, and relational databases.</p>
+              <div class="project-tags">
+                <span class="tag-pill">Python</span>
+                <span class="tag-pill">Django</span>
+                <span class="tag-pill">MySQL</span>
+                <span class="tag-pill">REST APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Statement Section / Philosophy Quote -->
+          <div class="statement-block">
+            <h2 class="statement-heading">Dedicated to clean code,<br>scalable architecture &amp;<br>continuous learning
+            </h2>
+          </div>
+        </div>
+
+        <!-- Right Column: Header, Card 2 (Quiz), and Card 4 (Technochanet) -->
+        <div class="projects-col-right">
+          <!-- Section Header -->
+          <div class="projects-header">
+            <div class="section-label">
+              <span class="dot-indicator"></span>
+              <span>Featured Projects &amp; Experience</span>
+            </div>
+            <h2 class="projects-title">Selected Work &amp; Technical Solutions</h2>
+          </div>
+
+          <!-- Project 2: Online Quiz System -->
+          <article class="project-card">
+            <div class="project-media-wrap">
+              <img src="assets/project_quiz.jpg" alt="Online Quiz Management Platform" class="project-img"
+                loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Online Quiz Management System</h3>
+              <p class="project-desc">Full-stack web application featuring dynamic randomized question rendering,
+                automated countdown timers, and instant grading metrics.</p>
+              <div class="project-tags">
+                <span class="tag-pill">Full Stack</span>
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2: Technochanet Web Dev Internship -->
+          <article class="project-card">
+            <div class="project-media-wrap">
+              <img src="assets/project_technochanet.jpg" alt="Technochanet Web Development Internship"
+                class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Web Development Internship • Technochanet</h3>
+              <p class="project-desc">Constructed responsive user interfaces, modular components, backend integrations,
+                and collaborative Git workflow pipelines for web services.</p>
+              <div class="project-tags">
+                <span class="tag-pill">Web Development</span>
+                <span class="tag-pill">React &amp; Node</span>
+                <span class="tag-pill">Git</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <span class="footer-logo">AMARJEET ROUT</span>
+            <p class="footer-sub">Full Stack Web Developer crafting scalable, maintainable web applications and modern
+              digital experiences.</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Navigation</h4>
+              <a href="#hero">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projects</a>
+              <a href="#experience">Experience</a>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <a href="mailto:amarjeetrout250@gmail.com">amarjeetrout250@gmail.com</a>
+              <a href="tel:+919938787614">+91 9938787614</a>
+              <p>Bhubaneswar, Odisha, India</p>
+            </div>
+            <div class="footer-col">
+              <h4>Profiles</h4>
+              <a href="https://github.com/AMARJEETROUT" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/amarjeet-rout-613867258" target="_blank"
+                rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Amarjeet Rout. All rights reserved.</p>
+          <a href="#hero" class="back-to-top" id="back-to-top">Back to Top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Minimalist Frame & Progress HUD (Fixed at bottom) -->
+  <div class="hud-overlay" id="hud-overlay">
+    <div class="hud-left">
+      <span class="hud-badge">SEQUENCE 24 FPS</span>
+      <span id="hud-frame-counter" class="hud-frame">001 / 192</span>
+    </div>
+
+    <div class="hud-progress-container" id="interactive-scrub-bar" title="Click or drag to scrub">
+      <div class="hud-progress-track">
+        <div id="hud-progress-fill" class="hud-progress-fill"></div>
+      </div>
+      <span id="hud-progress-pct" class="hud-pct">0%</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
